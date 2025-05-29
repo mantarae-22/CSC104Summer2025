@@ -1,0 +1,121 @@
+<!-- This is an HTML comment -->
+<!-- This is the first HTML tag that we need to use on our webpages; this tells the browser that this is an HTML 5 webpage -->
+<!DOCTYPE html>
+<!-- This html HTML tag must be included as the 2nd tag on the page; the lang="en" attribute/value is optional - it let's the browser and search engines now that this page was created in English; VS Code will add this attribute and value to your html tags. -->
+<html lang="en">
+    <!-- the head section is the first main section of the webpage; this is where we give information primarily to the browser and search engines. The user really only sees the title. -->
+    <head>
+        <!-- this meta tag tells the browser that pretty much any character from any language in the entire world may appear on this page - prepare yourself! -->
+        <meta charset="UTF-8">
+        <!-- make sure this viewport tag is on all of your webpages; this is the first step to getting a responsive design - your site will not look good on a mobile device without this tag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- this is the title tag; the text displays on the browser tab; keep it descriptive, but also short -->
+        <title>HTML & CSS History</title>
+    </head>
+    <!-- this is the body - the content of the webpage goes here -->
+    <body>
+        <!-- the header semantic tag; generally a logo, menu, page title could be found here -->
+        <header>
+            <!-- the h1 is the first level heading (heading 1) - effectively this is the page title. It should be descriptive of the page content and similar or the same as the title tag in the head section; 
+            There should be 1 and only 1 h1 tag on a page for the benefit of the screenreader.
+            If you need more heading tags, use h2 - h6. -->
+            <h1>CSC104 HTML and CSS History</h1>
+        </header>
+
+        <!-- the core content of the page goes here -->
+        <main>
+            <!-- HTML history section-->
+            <section>
+                <!-- h2 is the second level heading; you can use as many h2 tags as makes sense for your content -->
+                <h2>HTML Explained</h2>
+
+                <p>HTML stands for HyperText Markup Language. HTML provides the structure of the webpage by marking up the text. You can (and should) use variety of HTML tags to build the webpage content. HTML does not have many rules (other than if you open a tag, you should usually close it with a matching tag). One and only h1 tag is a best practice.</p>
+
+                <!-- another h2 to provide a subtitle for the next section -->
+                <h2>History of HTML</h2>
+                
+                <!-- we will create a list of HTML versions 
+                we are using the unordered list - ul with listitems - li; by default, li adds a bullet point in front of each line;
+                if you want a numbered list, use the ordered list - ol - for each li in an ol, there will a number in front of each line-->
+                <ul>
+                    <li>HTML 1.0 - developed in the early 1990's</li>
+                    <li>HTML 2.0 - released in 1995</li>
+                    <li>HTML 3.2 - released in 1997</li>
+                    <li>HTML 4.01 - released in 1999</li>
+                    <li>HTML 5 - release in 2014 (current version of HTML) - living standard</li>
+                </ul>
+
+                <!-- to add an image to the webpage, use the img tag. For each image set the src wich is the filename; use a relative file path and make sure the filename matches exactly with what is in the src (the case should match exactly) so that the image will load properly on GitHub. Likewise, that is why you need to use relative file paths (./images instead of /images) in this class. -->
+                <img src="./images/html_v_css.jpg" alt="HTML is the structure of a webpage, represented by shipping containers stacked in the form of a house. CSS is how you make those shipping containers look like a million dollar house.">
+            </section>
+
+            <!-- CSS Explanation and History -->
+            <section>
+                <!-- subheading for CSS -->
+                <h2>CSS Explained</h2>
+
+                <!-- paragraph explaining CSS -->
+                <p>
+                    CSS
+                    stands 
+                    for 
+                    Cascading Style Sheets. CSS is a language that exists to make HTML look better. CSS can control layout, colors, fonts - basically any visual element on the page can be changed from the default browswer style using CSS. 
+                </p>
+
+                <!-- CSS history subheading -->
+                <h2>History of CSS</h2>
+
+                <!-- bulleted list of CSS history -->
+                <ul>
+                    <li>CSS1 released in 1996</li>
+                    <li>CSS2 released in 1998</li>
+                    <li>CSS3 released in 2011 (current version of CSS) - living standard</li>
+                </ul>
+
+                <!-- <br> adds a line break -->
+
+                <!-- CSS syntax -->
+                <h2 id="h2CSSstructure">CSS Structure</h2>
+
+                <!-- you can use a pre section to have the browser respect any formatting - good for displaying code -->
+    <pre>
+        /* HTML element */
+        selector{
+            property: value;
+        }
+
+        /* custom class */
+        .redText{
+            color: red;
+        }
+
+        /* class based on id of the HTML element */
+        #h2CSSstructure{
+            color: blue;
+        }
+    </pre>
+
+                <ul>
+                    <li>CSS selectors: they can be an HTML element, custom class, based on the id of the HTML element</li>
+                    <li>CSS helps with the separation of content from style</li>
+                    <li>Helps with maintainability</li>
+                    <li>Accessibility issues can be more easily managed</li>
+                </ul>
+
+                <h2>3 Ways to Include CSS</h2>
+
+                <!-- the 3 ways to include CSS on our site -->
+                <ul>
+                    <li>External: CSS is in a separate CSS file (best practice)</li>
+                    <li>Embedded: CSS on a single page</li>
+                    <li>Inline: CSS is set on a specific HTML element (use with caution)</li>
+                </ul>
+            </section>
+        </main>
+
+        <!-- info at the bottom of the page; maybe sitemap, contact info, legalese -->
+        <footer>
+
+        </footer>
+    </body>
+</html>
