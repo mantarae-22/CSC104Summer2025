@@ -1,0 +1,45 @@
+body{
+    /* everything on the page is assigned a symmetric 20 pixel padding */
+    padding: 20px;
+
+    background-color: lightblue;
+}
+
+.outerEdge{
+    border: 3px solid green;
+}
+
+.content{
+    /* the width and height of the content - the text */
+    width: 200px;
+    /*height: 200px; */
+    /* set the background color so we can track the inner div's size */
+    background-color: lightgrey;
+
+    /* padding is the space between the content and border */
+    /* symmetrical padding - 20px on each side */
+    padding: 20px;
+
+    /* you can set specific values for each side */
+    padding-left: 30px;
+    padding-right: 10px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+
+    /* top right bottom left */
+    padding: 15px 20px 5px 30px;
+
+    /* set a 3pixel border - this similar to a frame around a picture*/
+    border: 3px solid purple;
+
+    /* margin is the spacing outside of the border */
+    margin: 40px;
+
+    margin-left: 20px;
+    margin-right: 30px;
+    margin-top: 40px;
+    margin-bottom: 0;
+
+    /* top right bottom left */
+    margin: 15px 20px 5px 30px;
+}

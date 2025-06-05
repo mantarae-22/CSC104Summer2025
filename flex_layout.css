@@ -1,0 +1,29 @@
+ .articleImage{
+    width: 100%;
+    max-width: 500px;
+}
+
+.parent{
+    /* specify flex layout on the parent element */
+    display: flex;
+    /* by default, use the whole row for content */
+    flex-direction: row;
+    /* evenly space out the items so they look nice */
+    justify-content: space-between;
+}
+
+.child{
+    /* allows the items to grow as needed */
+    flex-grow: 1;
+}
+
+/* set up a media query to make our page look better on a smaller screen */
+@media screen and (max-width: 850px){
+    .parent{
+        flex-direction: column;
+    } 
+
+    .child{
+        text-align: center;
+    }           
+}
