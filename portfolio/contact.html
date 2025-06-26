@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rae's Contact Page</title>
+    <!-- add link to the global css file -->
+    <link rel="stylesheet" href="main.css">
+    <!-- add link to the contact css file -->
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+     <header>
+        <!-- it is best practice to put the menu in a nav section -->
+        <nav>
+            <!-- a is the anchor tag - used for hyperlinks (links to other pages) -->
+            <a href="index.html">Home Page</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <h1>Rae's Contact Page</h1>
+    </header>
+
+    <main>
+        <h2>Use this form to contact me!</h2>
+        <form name="frmContact" id="frmContact" method="post" action="#">
+            <label for="txtName">Your name: </label>
+            <input type="text" id="txtName" name="txtName" placeholder="your name">
+            <label for="email">Your email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="txtaComments">Your comments:</label>
+            <textarea name="txtaComments" id="txtaComments" rows="10" cols="30"></textarea>
+            <input type="submit" value="Send Message">
+        </form>
+
+        <table>
+            <caption>Contact Me!</caption>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>Rae</td>
+                <td>dontspamme@nospam.com</td>
+            </tr>
+        </table>
+    </main>
+</body>
+</html>

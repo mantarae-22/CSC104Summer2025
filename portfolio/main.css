@@ -1,0 +1,61 @@
+body{
+    background-color: rgb(217, 237, 244);
+    color: rgb(3, 3, 83);
+    margin: 0;
+    padding: 0;
+}
+
+.img-decorative{
+    width: 100%;
+}
+
+header{
+    background-color: rgb(3, 3, 83);
+    color: rgb(217, 237, 244);
+    padding: 20px;
+    text-align: center;
+}
+
+h1{
+    padding-top: 10px;
+}
+
+main{
+    padding: 20px;
+}
+
+/* these styles will only apply to links within the nav section */
+nav a{    
+    color: rgb(217, 237, 244);
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* swap the link colors on hover */
+nav a:hover{
+    background-color: rgb(217, 237, 244);
+    color: rgb(3, 3, 83);
+
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.flex-column{
+    text-align: center;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+
+.img-column{
+    width: 80%;
+    max-width: 400px;
+    border-radius: 5px;
+}
+

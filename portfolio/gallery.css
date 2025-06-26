@@ -1,0 +1,28 @@
+  /* CSS for the container of the gallery images */
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /* each image is in this container */
+        .galleryImage{
+            flex: 23%;
+            max-width: 23%;
+            padding: 0 4px;
+        }
+
+        /* these styles will apply only to images located in a parent container called galleryImage */
+        .galleryImage img{
+            margin-top: 8px;
+            vertical-align: middle;
+            width: 100%;
+        }
+
+        /* media query for smaller screen size */
+        @media (max-width: 600px){
+            .galleryImage{
+                flex: 100%;
+                max-width: 100%;
+                padding: 4px 0;
+            }
+        }
